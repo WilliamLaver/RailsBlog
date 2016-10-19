@@ -5,17 +5,20 @@
 	<title>WillBlog</title>
 </head>
 <body>
-
+	<div class="header">
+		Welcome to Will's Blog About NOTHING (for now...)
+	</div>
+	
 	<div class="container">
 		
 		<% @articles.each do |a| %>
 			<div class="article">
-				<h1> <%= link_to a.title, article_path(a) %> </h1>
-				<p> <%= a.body %> </p>	
+				<%= link_to a.title, article_path(a), class: 'article_title' %>
+				<div class="article_body"> <%= a.body %> </div>	
 			</div>
 			
 		<% end %>
-		<%= link_to "Create New Article", new_article_path()%>
+		<%= link_to "Create New Article", new_article_path %>
 	</div>
 
 </body>

@@ -1,3 +1,36 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.flash {
+	
+}
+
+.header {
+	display: inline-block;
+	text-align: center;
+	font-size: 24px;
+	font-family: Arials;
+	font-weight: bold;
+	color: green;
+}
+
+.container {
+	
+}
+
+.article {
+	margin: 0 auto 10px;
+}
+
+.article_title {
+	margin: 0 0 0 200px;
+	width: 200px; height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.article_body {
+	border: 1px solid blue;
+	width: 50%; height: 200px;
+}

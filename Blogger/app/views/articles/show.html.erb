@@ -7,7 +7,11 @@
 	<div class="container">
 		
 		<div class="article">
-			<%= @article.body %>
+			<div class="article_body"><%= @article.body %></div>
+			[<%= link_to "Edit", edit_article_path(@article) %>]
+			[<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Would you like to permanently delete this article?"}%>]<br>
+
+			<%= link_to "Main Page", '/articles' %>
 		</div>
 
 	</div>
