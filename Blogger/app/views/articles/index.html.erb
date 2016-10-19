@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>WillBlog</title>
+</head>
+<body>
+
+	<div class="container">
+		
+		<% @articles.each do |a| %>
+			<div class="article">
+				<h1> <%= link_to a.title, article_path(a) %> </h1>
+				<p> <%= a.body %> </p>	
+			</div>
+			
+		<% end %>
+		<%= link_to "Create New Article", new_article_path()%>
+	</div>
+
+</body>
+</html>
