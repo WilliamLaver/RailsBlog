@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+	root to: 'articles#index'
 	get '/articles' => 'articles#index'
 	post '/articles' => 'articles#create'
 	get '/articles/new' => 'articles#new', as: :new_article
