@@ -42,7 +42,8 @@ include ArticlesHelper
 	def require_login
 		unless logged_in?
 			flash.now.alert = "Must log in to make changes!"
-			redirect_to root_path
+			@path = request.env['REQUEST_PATH']
+			redirect_back fallback_location: root_path
 		end
 	end
 end
