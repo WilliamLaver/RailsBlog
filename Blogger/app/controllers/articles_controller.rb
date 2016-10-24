@@ -36,4 +36,13 @@ include ArticlesHelper
 		@article.destroy
 		redirect_to '/articles'
 	end
+
+	before_filter :require_login, only: [:new, :create, :edit, :update, :destroy]
+
+	def require_login
+		unless logged_in?
+			flash.now.alert = "Must log in to make changes!"
+			redirect_to root_path
+		end
+	end
 end
