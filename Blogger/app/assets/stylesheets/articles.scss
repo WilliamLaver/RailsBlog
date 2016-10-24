@@ -6,6 +6,7 @@
 	
 }
 
+
 .header {
 	display: inline-block;
 	text-align: center;
@@ -15,9 +16,15 @@
 	color: green;
 }
 
+/*
 .container {
-	
-}
+	width: 75%;
+  	margin: 0 auto;
+  	background: #fff;
+  	padding: 20px 40px;
+  	border: solid 1px black;
+  	margin-top: 20px;
+}*/
 
 .article {
 	margin: 0 auto 10px;
@@ -44,3 +51,5 @@
 .comment {
 	margin: 0 0 20px 0;
 }
+
+
