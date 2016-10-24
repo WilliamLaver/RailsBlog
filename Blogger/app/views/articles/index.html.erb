@@ -5,12 +5,13 @@
 	<title>WillBlog</title>
 </head>
 <body>
+
 	<div class="header">
-		Welcome to Will's Blog About NOTHING (for now...)
+		Welcome to Will's Blog About Nothing (for now...)
 	</div>
 	
 	<div class="container">
-		
+		<%= link_to "Browse Tags", '/tags' %>
 		<% @articles.each do |a| %>
 			<div class="article">
 				<%= link_to a.title, article_path(a), class: 'article_title' %>
