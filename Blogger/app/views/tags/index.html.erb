@@ -1,9 +1,12 @@
 <%= link_to "Main Page", root_path %>
 
 <h2>Tags Found in Articles:</h2>
-
 <ul>
-<%= @tags.each do |tag| %>
-	<li><%= link_to tag.name, tag_path(tag) %> [<%= link_to "delete", tag_path(tag), method: :delete, data: {confirm: "Would you like to permanently delete this tag?"} %>] </li>
+<% @tags.each do |tag| %>
+	<li><%= link_to tag.name, tag_path(tag) %> 
+		<% if logged_in? %>
+			[<%= link_to "delete", tag_path(tag), method: :delete, data: {confirm: "Would you like to permanently delete this tag?"} %>] 
+		<% end %>
+	</li>
 <% end %>
 </ul>

@@ -14,9 +14,11 @@
 	<p>
 		<% if @article.image.exists? %>
 			<%= image_tag @article.image.url %><br>
+			<%= link_to "Delete Attachment", removeAttachment_path(@article) %>
+		<% else %>
+			<%= f.label :image, "Attach an Image" %>
+			<%= f.file_field :image %>
 		<% end %>
-		<%= f.label :image, "Attach an Image" %>
-		<%= f.file_field :image %>
 	</p>
 	<p>
 		<%= f.submit %>

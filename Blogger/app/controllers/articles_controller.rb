@@ -25,6 +25,12 @@ include ArticlesHelper
 		@article = Article.find(params[:id])
 	end
 
+	def removeAttachment
+		@article = Article.find(params[:id])
+		@article.image.destroy
+		redirect_to edit_article_path(@article)
+	end
+
 	def create
 		@article = Article.new(article_params)
 		@article.save
@@ -42,7 +48,6 @@ include ArticlesHelper
 	def require_login
 		unless logged_in?
 			flash.now.alert = "Must log in to make changes!"
-			@path = request.env['REQUEST_PATH']
 			redirect_back fallback_location: root_path
 		end
 	end

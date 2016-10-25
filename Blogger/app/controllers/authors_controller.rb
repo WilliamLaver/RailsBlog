@@ -3,6 +3,7 @@ class AuthorsController < ApplicationController
 
   # GET /authors
   # GET /authors.json
+
   def index
     @authors = Author.all
   end
@@ -85,7 +86,7 @@ class AuthorsController < ApplicationController
 
     def require_login
       unless logged_in?
-        redirect_to 'login'
+        redirect_to '/login'
       end
     end
 

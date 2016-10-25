@@ -1,8 +1,10 @@
-<%= link_to "Main Page", '/articles' %>
+<%= link_to "Main Page", '/articles' %><br>
+<%= link_to "Back to Tags", '/tags' %>
 <h1>Articles tagged with:</h1>
+
 <div>
 	<ul>
-		<%= @tag.articles.each do |a| %>
+		<% @tag.articles.each do |a| %>
 			<li> <%= link_to a.title, article_path(a) %> </li>
 		<% end %>
 	</ul>

@@ -4,13 +4,14 @@
 	<title>WillBlog</title>
 </head>
 <body>
+	<%= link_to "Main Page", '/articles' %>
 	<div class="container">
-		<%= link_to "Main Page", '/articles' %>
+		
 		<div class="article">
 			<div class="article_title"> <%= @article.title %> </div>
 			<p>
 				Tags:
-				<%= @article.tags.each do |tag| %>
+				<% @article.tags.each do |tag| %>
 					<%= link_to tag.name, tag_path(tag) %>
  				<% end %>
 			</p>

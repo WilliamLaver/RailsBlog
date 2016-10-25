@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 #	patch '/articles/:id' => 'articles#update'
 #	put '/articles/:id' => 'articles#update'
 #	delete '/articles/:id' => 'articles#destroy'
+	get '/articles/:id/edit/removeAttachment' => 'articles#removeAttachment', as: :removeAttachment
 	resources :articles do 
 		resources :comments
 	end
