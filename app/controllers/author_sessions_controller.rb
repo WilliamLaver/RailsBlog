@@ -9,7 +9,7 @@ class AuthorSessionsController < ApplicationController
 			redirect_to $my_previous_url
 			flash.notice = "Login Successful!"
 		else
-			flash.now.alert = "Login failed."
+			flash.notice = "Login failed."
 			render action: :new
 		end
 	end
