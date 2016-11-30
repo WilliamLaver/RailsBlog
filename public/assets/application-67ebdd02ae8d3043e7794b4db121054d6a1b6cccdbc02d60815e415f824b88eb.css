@@ -1,0 +1,84 @@
+/* line 5, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.flash {
+  width: 100%;
+  height: 20px;
+  margin: 0 auto;
+  text-align: center;
+  /*background-color: rgb(32, 142, 170);*/
+}
+
+/* line 15, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.header {
+  display: inline-block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arials;
+  font-weight: bold;
+  color: green;
+}
+
+/* line 26, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.container {
+  width: 75%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+/* line 35, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.article {
+  margin: 10px auto;
+}
+
+/* line 39, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.article_title {
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 46, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.article_body {
+  border: 1px solid blue;
+  margin-top: 5px;
+  width: 100%;
+  height: 200px;
+}
+
+/* line 52, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.comment h4, .comment p {
+  display: inline-block;
+  margin: 0 10px 0px 0;
+}
+
+/* line 58, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/articles.scss */
+.comment {
+  margin: 0 0 20px 0;
+}
+/* line 4, C:/Users/will_/Documents/Programming/Web_Development/the_odin_project/RailsBlog/Blogger/app/assets/stylesheets/comments.scss */
+.form .fields * {
+  display: inline-block;
+  margin: 0 10px 0px 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
